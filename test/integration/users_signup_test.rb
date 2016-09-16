@@ -12,6 +12,7 @@ test "invalid signup information" do
                                          password:              "foo",
                                          password_confirmation: "bar" } }
     end
+end
 
 test "valid signup information" do
     get signup_path
@@ -20,7 +21,7 @@ test "valid signup information" do
                                          email: "user@example.com",
                                          password:              "password",
                                          password_confirmation: "password" } }
-    end
+    end	
     follow_redirect!    
     assert_template 'users/show'
   end
