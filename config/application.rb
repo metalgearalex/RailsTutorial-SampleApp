@@ -2,6 +2,8 @@ require_relative 'boot'
 
 require 'rails/all'
 
+#require 'byebug' #adding this to try and fix byebug issue
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
